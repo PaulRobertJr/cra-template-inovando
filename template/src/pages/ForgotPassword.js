@@ -43,11 +43,18 @@ const ForgotPassword = () => {
 
   return (
     <Centered column>
-      <Typography variant="h6" mb={2} align="center">
-        Esqueci minha senha
-      </Typography>
       <FormContainer>
-        <ForgotPasswordForm onSubmit={onSubmit} />
+        <Paper>
+          <Box p={4}>
+            <Box mb={2}>
+              <Typography fontSize={22} fontWeight={600}>
+                Esqueci minha senha
+              </Typography>
+            </Box>
+            <ForgotPasswordForm onSubmit={onSubmit} />
+            {''}
+          </Box>
+        </Paper>
       </FormContainer>
     </Centered>
   );
